@@ -1,3 +1,17 @@
+// Todo: anidamiento y un mixin
+
 @use "variables";
 
-// TODO: anidamiento y un mixin
+body { 
+    background-color: variables.$color-fondo;
+    color: variables.$color-principal;
+}
+
+header { 
+    background-color: variables.$color-principal;
+    color: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+

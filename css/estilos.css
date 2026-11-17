@@ -1,1 +1,14 @@
-/* Estilos compilados desde scss/estilos.scss con: npx sass scss/estilos.scss css/estilos.css */
+body {
+  background-color: #F1F5F9;
+  color: #0F172A;
+}
+
+header {
+  background-color: #0F172A;
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

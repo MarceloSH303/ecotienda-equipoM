@@ -27,5 +27,22 @@ nav a:hover {
   background-color: #FACC15;
   color: #0F172A;
 }
+nav .tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+nav .tarjeta {
+  background-color: white;
+}
+nav {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s;
+}
+nav:hover {
+  transform: translateY(-6px);
+}
 
 /*# sourceMappingURL=estilos.css.map */

@@ -15,3 +15,20 @@ header {
     margin-bottom: 24px;
 }
 
+nav {
+    display: flex;
+    gap: 12px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 999px;
+        transition: 0.3s;
+        &:hover {
+            background-color: #FACC15;
+            color: #0F172A;
+        }
+    }
+} 

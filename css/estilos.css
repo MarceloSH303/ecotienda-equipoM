@@ -1,6 +1,14 @@
+:root {
+  --color-principal: #0F172A;
+  --color-acento: #0F766E;
+  --color-precio: #FACC15;
+  --color-fondo: #F1F5F9;
+}
+
 body {
   background-color: #F1F5F9;
   color: #0F172A;
+  font-family: "Poppins", sans-serif;
 }
 
 header {

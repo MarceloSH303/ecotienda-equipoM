@@ -102,6 +102,42 @@ nav {
     border-color: #0F766E;
     box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.3);
 }
+// Selectores AGRUPADOS: la misma regla para h1, h2 y h3
+h1, h2, h3 {
+    color: #0F172A;
+    font-weight: 700;
+}
+
+// Selector DESCENDIENTE: solo los h1 y p que están dentro del header
+header h1 {
+    color: white;
+}
+
+header p {
+    color: #E2E8F0;
+}
+
+// Selector HIJO (>): solo los p que son hijos directos de .tarjeta
+.tarjeta > p {
+    margin-bottom: 8px;
+}
+
+// Selector de ATRIBUTO: los enlaces que abren otra pestaña
+a[target="_blank"] {
+    color: #0F766E;
+    font-weight: 700;
+}
+
+// Pseudoclase :nth-child(): la segunda tarjeta lleva un borde amarillo arriba
+.tarjetas .tarjeta:nth-child(2) {
+    border-top: 4px solid #FACC15;
+}
+
+// Pseudoclase :first-child: el primer producto del carrito en negrilla
+#carrito li:first-child {
+    font-weight: 700;
+}
+
 @media (max-width: 576px) {
     nav { flex-direction: column; }
     .tarjetas { grid-template-columns: 1fr; }

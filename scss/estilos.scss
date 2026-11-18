@@ -1,5 +1,3 @@
-// Todo: anidamiento y un mixin
-
 @use "variables";
 
 :root {
@@ -9,13 +7,13 @@
     --color-fondo: #F1F5F9;
 }
 
-body { 
+body {
     background-color: variables.$color-fondo;
     color: variables.$color-principal;
     font-family: "Poppins", sans-serif;
 }
 
-header { 
+header {
     background-color: variables.$color-principal;
     color: white;
     padding: 24px;
@@ -34,24 +32,67 @@ nav {
         border: 2px solid rgba(255, 255, 255, 0.5);
         border-radius: 999px;
         transition: 0.3s;
+
         &:hover {
             background-color: #FACC15;
             color: #0F172A;
         }
     }
-    .tarjetas {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-    }
-    .tarjeta {
-        background-color: white;
-    }
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.tarjeta {
+    background-color: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s;
+
     &:hover {
         transform: translateY(-6px);
-    } 
-} 
+    }
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.filtro {
+    border: 2px solid #0F766E;
+    background-color: white;
+    color: #0F766E;
+    border-radius: 999px;
+    padding: 6px 16px;
+    transition: 0.3s;
+
+    &.activo {
+        background-color: #0F766E;
+        color: white;
+    }
+}
+
+.precio {
+    color: #0F766E;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#carrito {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+@media (max-width: 576px) {
+    nav { flex-direction: column; }
+    .tarjetas { grid-template-columns: 1fr; }
+}

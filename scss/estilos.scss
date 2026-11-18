@@ -91,7 +91,13 @@ nav {
     border-radius: 12px;
     margin-top: 24px;
 }
-
+#intro {
+    background-color: white;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    border-left: 6px solid #FACC15;
+    border-radius: 12px;
+}
 @media (max-width: 576px) {
     nav { flex-direction: column; }
     .tarjetas { grid-template-columns: 1fr; }

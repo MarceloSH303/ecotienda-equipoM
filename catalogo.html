@@ -18,9 +18,29 @@
             </nav>
         </header>
         <main>
-            <!-- TODO: contenido de Catálogo -->
-        </main>
-        <footer>
+            <section>
+                <h2>Catálogo</h2>
+                <div class="filtros">
+                    <button type="button" class="filtro activo" data-categoria="todas">Todas</button>
+                    <button type="button" class="filtro" data-categoria="iluminacion">Iluminación</button>
+                    <button type="button" class="filtro" data-categoria="cocina">Cocina</button>
+                    <button type="button" class="filtro" data-categoria="refrigeracion">Refrigeración</button>
+                    <button type="button" class="filtro" data-categoria="oficina">Oficina</button>
+                </div>
+                <label for="buscador">Buscar producto:</label>
+                <input class="form-control" type="text" id="buscador" placeholder="Ej.: bombillo">
+                <div id="productos" class="tarjetas"></div>
+                </section>
+                <section id="carrito">
+                    <h2>Carrito</h2>
+                    <ul id="lista-carrito"></ul>
+                    <p>Total: <strong id="total">$0</strong></p>
+                    <p>Ahorro al mes: <strong id="ahorro">0 kWh · $0</strong></p>
+                    <p>La compra se paga sola en: <strong id="meses">-</strong></p>
+                    <button type="button" id="vaciar" class="btn btn-secondary">Vaciar carrito</button>
+                </section>
+            </main>
+            <footer>
             <p>Ingeniería Web I · IU Digital de Antioquia · 2026-2</p>
         </footer>
         <script src="js/tienda.js"></script>

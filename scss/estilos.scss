@@ -1,5 +1,12 @@
 @use "variables";
 
+// MIXIN: un bloque de estilos reutilizable para las cajas
+@mixin caja($relleno) {
+    padding: $relleno;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
 :root {
     --color-principal: #0F172A;
     --color-acento: #0F766E;
@@ -48,9 +55,7 @@ nav {
 
 .tarjeta {
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    @include caja(20px);
     transition: transform 0.3s;
 
     &:hover {
@@ -87,8 +92,7 @@ nav {
 
 #carrito {
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
+    @include caja(20px);
     margin-top: 24px;
 }
 #intro {

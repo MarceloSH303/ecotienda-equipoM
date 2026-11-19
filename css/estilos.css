@@ -21,6 +21,7 @@ header {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 nav a {
@@ -35,22 +36,108 @@ nav a:hover {
   background-color: #FACC15;
   color: #0F172A;
 }
-nav .tarjetas {
+
+.tarjetas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-nav .tarjeta {
+
+.tarjeta {
   background-color: white;
-}
-nav {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s;
 }
-nav:hover {
+.tarjeta:hover {
   transform: translateY(-6px);
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filtro {
+  border: 2px solid #0F766E;
+  background-color: white;
+  color: #0F766E;
+  border-radius: 999px;
+  padding: 6px 16px;
+  transition: 0.3s;
+}
+.filtro.activo {
+  background-color: #0F766E;
+  color: white;
+}
+
+.precio {
+  color: #0F766E;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+#carrito {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin-top: 24px;
+}
+
+#intro {
+  background-color: white;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  border-left: 6px solid #FACC15;
+  border-radius: 12px;
+}
+
+.form-control:focus {
+  border-color: #0F766E;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.3);
+}
+
+h1, h2, h3 {
+  color: #0F172A;
+  font-weight: 700;
+}
+
+header h1 {
+  color: white;
+}
+
+header p {
+  color: #E2E8F0;
+}
+
+.tarjeta > p {
+  margin-bottom: 8px;
+}
+
+a[target=_blank] {
+  color: #0F766E;
+  font-weight: 700;
+}
+
+.tarjetas .tarjeta:nth-child(2) {
+  border-top: 4px solid #FACC15;
+}
+
+#carrito li:first-child {
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
